@@ -1,0 +1,94 @@
+<!--
+# Student Name: George Petty-O'Shea
+# Student ID: 5031008
+# Date: 07-May-2022
+-->
+
+<!DOCTYPE html>
+<html lang="en" id="top">
+    <head>
+      <!-- Meta Information
+      *********************************************************************** -->
+      <meta charset="utf-8">
+      <meta name="description" content="Website for The Haukai Restaurant">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hours</title>
+
+      <!-- Linked CSS Style Sheets-->
+      <link rel="stylesheet" href="_css/styles.css">
+
+      <!-- Linked JavaScript Scripts -->
+      <script src="_scripts/scripts.js"></script>
+
+      <!-- Linked Google Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    </head>
+
+    <!-- HTML Body
+    *********************************************************************** -->
+    <body onresize="myFunction2()">
+      
+      <!-- Header & Navigation Bar
+      --------------------------------------------------------------------- -->
+      <header role="banner">
+        <nav role="navigation" class="nav-wrap">
+          <div id="nav-home">
+            <a href="index.html" class="active">Home</a>
+          </div>
+    
+          <div id="nav-menu">
+            <a href="menu.html">Menu</a>
+            <a href="hours.html">Hours</a>
+            <a href="bookings.html">Bookings</a>
+            <a href="contact.html">Contact</a>
+          </div>
+    
+          <a href="javascript:void(0);" id="menu-button" onclick="myFunction()">
+            <img class="burger-icon" src="_images/burger-button.svg" alt="Burger menu icon" width="17px" height="27px">
+          </a>
+        </nav>
+      </header>
+
+      <!-- Main Content Area
+      --------------------------------------------------------------------- -->
+      <main role="main">
+        <section class="container-01">
+          <article>
+            <h1>Hours</h1>
+            <p>The Haukai Restaurant is open from <time datetime="17:00">5pm</time> to <time datetime="00:00">12am</time>, from Wednesday to Sunday inclusive.
+          </article>
+        </section>
+        
+        <section class="container-02">
+          <article class="calendar-container">
+            <iframe id="googlecalendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Pacific%2FAuckland&showTitle=1&showNav=1&showDate=1&showPrint=0&showCalendars=0&showTz=0&showTabs=0&mode=MONTH&src=bjJrODQxb2Y1Mm9rcGpzMGl0MDlsN2NkazhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4tZ2IubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%234285F4&color=%230B8043" width="880" height="600" frameborder="0" scrolling="no"></iframe>
+          </article>
+        </section>
+      </main>
+
+      <!-- Site-Map
+      --------------------------------------------------------------- -->
+      <section class="site-map">
+        <article>
+            <a class="site-map-item" href="index.html">Home</a>
+            <a class="site-map-item" href="menu.html">Menu</a>
+            <a class="site-map-item" href="hours.html">Hours</a>
+            <a class="site-map-item" href="bookings.html">Bookings</a>
+            <a class="site-map-item" href="contact.html">Contact</a>
+        </article>
+      </section>
+    </main>
+
+      <!-- Footer
+      --------------------------------------------------------------- -->
+      <footer role="contentinfo">
+        <article>
+          <a class="privacy-text" href="privacy.html">Disclaimer &amp; Privacy Policy</a>
+          <p class="footer-text"><i>Copyright &copy; The Haukai Restaurant 2022</i></p>
+        </article>
+      </footer>
+
+    </body>
+</html>

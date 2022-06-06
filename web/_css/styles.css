@@ -1,0 +1,396 @@
+/*
+# Student Name: George Petty-O'Shea
+# Student ID: 5031008
+# Date: 07-May-2022
+*/
+
+/* Global Styles
+--------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px; /* Setting root font-size for rem */
+  font-family: "Roboto", "Arial", sans-serif; /* Setting default body font */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #454545;
+}
+
+/* Fonts
+--------------------------------------------------------------- */
+h1 {
+  font-family: "Quicksand", "Arial", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #72bf7c;
+}
+
+h2 {
+  font-family: "Quicksand", "Arial", sans-serif;
+  font-size: 2.0rem;
+  font-weight: 400;
+  color: #72bf7c;
+}
+
+h3 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1.2rem;
+}
+
+p, a {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 1.0rem;
+  line-height: 2.0rem;
+  color: #000000;
+}
+
+.body-link:hover {
+  color: #72bf7c;
+}
+
+/* Navigation
+--------------------------------------------------------------- */
+.nav-wrap {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  
+  background-color: #454545; /* Nav Menu Background Color */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+}
+
+#nav-home {
+  height: 51px;
+  background-color: #72bf7c; /* Project Red */
+}
+
+#nav-menu {
+  display: none;
+  clear: both;
+}
+
+#menu-button {
+  background: #FFFFFF; /* Menu Icon Background Color */
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.burger-icon {
+display: block;
+}
+
+.nav-wrap a {
+  color: #FFFFFF;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-family: "Quicksand", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  display: block;
+}
+
+.nav-wrap a:hover {
+  background-color: #efefef;
+  color: black;
+}
+
+.nav-wrap a.active {
+  background-color: #FFFFFF;
+  color: #000000;
+  float: left;
+}
+
+.nav-wrap a.active:hover {
+  background-color: #efefef;
+  color: black;
+}
+
+#menu-button:hover {
+  background-color: #efefef;
+}
+
+/* Main Content Area
+--------------------------------------------------------------- */
+.home-image-container {
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.home-image-file {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+article {
+  max-width: 880px; /* Master control for size of header-width */  
+  margin-left: auto; /* Keeps container centered on page */
+  margin-right: auto; /* Keeps container centered on page */
+  display: block;
+  padding: 34px 16px 34px 16px;
+}
+
+.container-01 {
+  background-color: #FFFFFF;
+  overflow: auto;
+}
+
+.container-02 {
+  background-color: #efefef;
+  overflow: auto;
+}
+
+/* Menu Page
+--------------------------------------------------------------- */
+.menu-image-container {
+  padding-top: 0;
+}
+
+.menu-image-file {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.menu-container {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+.menu-label {
+  margin-top: 0;
+  margin-left: 27px;
+}
+
+.menu-item-container {
+  margin: 10px 27px;
+  padding: 0px;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+}
+
+.menu-title {
+  float: left;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.menu-price {
+  float: right;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.menu-text {
+  clear: both;
+  font-size: 1.0rem;
+}
+
+.drink-item-container {
+  min-height: 150px;
+  margin: 10px 27px;
+  padding: 0px;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+}
+
+.drink-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  clear: left;
+}
+
+.drink-price {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Contact Page
+--------------------------------------------------------------- */
+.contact-info {
+  list-style: none;
+  text-align: center;
+  line-height: 3.0rem;
+}
+
+.contact-info a {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.contact-info a:link {
+  color: #454545;
+}
+
+.contact-info a:visited {
+  color: #454545;
+}
+
+.contact-info a:hover {
+  color: #72bf7c;
+}
+
+#googlemap {
+  Outline: 1px solid darkgrey;
+  background-color: none;
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+/* Hours Page
+--------------------------------------------------------------- */
+#googlecalendar {
+  Outline: 1px solid darkgrey;
+  background-color: none;
+  width: 100%;
+  height: 600px;
+  display: block;
+}
+
+/* Booking Page
+--------------------------------------------------------------- */
+#googleform {
+  background-color: none;
+  width: 100%;
+  height: 1580px;
+  display: block;
+}
+
+/* Privacy Page
+--------------------------------------------------------------- */
+.privacy-label {
+  margin-top: 0;
+}
+
+/* Site Map
+--------------------------------------------------------------- */
+.site-map {
+  background-color: #72bf7c;
+}
+
+.site-map-item {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  font-family: "Quicksand", "Arial", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.site-map-item:hover {
+  text-decoration: underline;
+}
+
+/* Footer
+--------------------------------------------------------------- */
+.privacy-text {
+  color: #FFFFFF;
+}
+
+.privacy-text:hover {
+  color:#72bf7c;
+}
+
+footer {
+  background-color: #454545;
+  text-align: center;
+}
+
+.footer-text {
+  color: #FFFFFF; /* Footer Text Color */
+}
+
+/* Media Queries
+--------------------------------------------------------------- */
+@media (min-width: 768px){
+ 
+  /* Navigation
+   ................................ */
+  .nav-wrap {
+    background-color: #72bf7c;
+  }
+
+  #nav-menu {
+    display: contents;
+  }
+
+  #menu-button {
+    display: none;  
+  }
+
+  #nav-home {
+    display: block;
+    float: left;
+  }
+
+  .nav-wrap a {
+    display: block;
+    float: left;
+  }
+
+  #nav-menu {
+    display: contents;
+  }
+
+  /* Menu Page 
+  ................................ */
+  .menu-item-container {
+    display: inline-block;
+    width: 314px;
+  }
+
+  .menu-left {
+    float: left;
+  }
+
+  .menu-right {
+    float: right;
+  }
+
+  .drink-title {
+    float: left;
+    clear: left;
+  }
+
+  .drink-price {
+    float: right;
+  }
+  
+  /* Site Map 
+  ................................ */
+  .site-map {
+    display: flex;
+    justify-content: center;
+  }
+
+  .site-map-item {
+    display: inline-block;
+  }
+}
